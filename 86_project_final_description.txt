@@ -1,0 +1,57 @@
+1. We have accomplished most of the  specifications in the formal specification report that we submitted before the start of the project. Project is planning to help customers access property information that they are looking for and  be able to contact the realtors through the webpage.
+
+
+2. There are a few changes in the schema.
+
+In the customer table, we modified the customer_id as AUTO_INCREMENT, because it can be multiple customers willing to contact realtors. Arranging the table as ascending order that helps updating the information and make the customer table looks tidy and clean. There is little changes type INT instead of type CHAR
+
+In the property table and room table, we added the image_url which helped us  easily show the pictures of the property.
+
+In the ForSale table, we added the check constraint for price to handle exception that price value is less than 0. Likewise, we added the same check constraint for price in ForRent table as well.
+
+In the CustomerContactRealtor table, we added the message_id attributes, which helps us easier to track the messages.
+
+
+We implemented the trigger to check if a customer enters a valid email address.
+
+3. Functional dependencies
+
+RealtyOffice
+FD: branch_id → branch_name, address, postal_code
+The branch ID determines the branch name, its address and the corresponding postal code.
+
+Realtor
+FD: realtor_id → phone, email, name, branch_id
+The realtor ID determines the phone number, email address, name, the office he/she works at.
+
+Property
+FD: property_id → address, postal_code, type, date_built, sq_ft, date_added, num_beds, num_baths, realtor_id
+The property ID determines the its address, postal code, property type, date built, footage , data added to the database, number of bed, number of baths, and the realtor responsible for the property.
+
+ForSale
+FD: property_id → price
+The property ID is associated with a certain price.
+
+ForRent
+FD: property_id → rent
+The property ID is associated with a certain price.
+
+Sold
+FD: property_id → final_price, date_sold, customer_id
+The property ID is associated with the final price, data sold, the customer who bought the property.
+
+Rented
+FD: property_id → final_rent, from_date, to_date, customer_id
+The property ID is associated with customer who rented the property and the start date and end date of the rental duration.
+
+Feature
+FD: feature_name, property_id → description
+The property ID and feature name determine the description of the feature.
+
+Room
+FD: property_id, room_name → image_url
+The property ID and room name has  a corresponding image url.
+
+Customer
+FD: customer_id → name, email, phone
+The customer Id determines the name, email address, phone number.

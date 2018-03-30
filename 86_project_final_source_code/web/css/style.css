@@ -1,0 +1,166 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 11-Mar-2018, 8:47:34 PM
+    Author     : Adi
+*/
+.map-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+.gallery-icon {
+  width: 16px;
+  height: 16px;
+  background-size: 16px 16px;
+  display: inline-block;
+}
+.no-results {
+  width: 100%;
+  height: 100%;
+  padding-top: 25px;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+}
+.navbar {
+  font-size: 1rem !important;
+}
+.customer-search {
+  padding: 25px;
+}
+.propertyDescriptionHeader {
+  display: inline-block;
+  width: 67%;
+  padding-right: 10px;
+}
+.propertyDescriptionHeader .middle-dot {
+  content: "\00B7";
+  display: inline-block;
+  margin: 0 0 0 5;
+}
+.propertyDescriptionHeader .middle-dot:before {
+  font-size: 20px;
+  line-height: 1.5;
+  font-weight: 700;
+}
+.propertyPriceDetails {
+  padding-left: 10px;
+  width: 33%;
+  display: inline-block;
+  float: right;
+}
+.row-fluid {
+  width: 100%;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+.listings-header .listings-count {
+  display: inline-block;
+}
+.listings-header .listings-refresh {
+  padding-right: 10px;
+  display: inline-block;
+}
+.listing_item {
+  margin: 25px;
+}
+.listing_item.col-md-5 {
+  width: 100%;
+  float: left;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+.listing_item .image-container {
+  height: 40vh;
+  overflow: hidden;
+}
+.listing_item .card-img-top {
+  display: block;
+  width: 200%;
+  margin-left: -50%;
+  margin-top: -25%;
+  margin-bottom: -25%;
+}
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100;
+  padding: 0;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, 0.1);
+}
+.sidebar .side-nav {
+  position: absolute;
+  top: 56px;
+  height: calc(100vh - 56px);
+  padding-top: .5rem;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+.sidebar .side-nav .nav-link {
+  color: #333;
+  font-weight: 500;
+}
+.sidebar .side-nav .nav-link.active {
+  color: #007bff;
+}
+.realtor-page .content #messages_table table {
+  table-layout: fixed;
+  overflow: auto;
+  word-wrap: break-word;
+}
+.upside-down-nav .nav-tabs {
+  border-bottom: 0;
+  border-top: 1px solid #dee2e6;
+}
+.upside-down-nav .nav-tabs .nav-item {
+  margin-bottom: 0;
+  margin-top: -1px;
+}
+.upside-down-nav .nav-tabs .nav-link {
+  border: 1px solid transparent;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  border-bottom-left-radius: .25rem;
+  border-bottom-right-radius: .25rem;
+}
+.upside-down-nav .nav-tabs .nav-link.active {
+  border-color: #fff #dee2e6 #dee2e6 #dee2e6;
+}
+.tab-content .tab-pane .carousel .carousel-inner {
+  height: 50vh;
+}
+.tab-content .tab-pane .carousel img {
+  width: 100%;
+  max-height: 50vh;
+  overflow: hidden;
+}
+.realtorContactInfo .realtor-details {
+  padding-bottom: 0;
+}
+.realtorContactInfo .realtor-contact-form {
+  padding-top: 10px;
+}
+.realtorContactInfo .realtor-contact-form .submit-button {
+  margin-top: 10px;
+}
+.masthead {
+  display: flex;
+  align-items: flex-end;
+  width: 100%;
+  height: 100%;
+  background: url(../img/false_creek.jpg) no-repeat center center scroll;
+  background-size: cover;
+}
+.masthead .title-page-body {
+  background: transparent;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */
