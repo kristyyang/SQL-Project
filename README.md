@@ -16,4 +16,4 @@ This project will be implemented using the CS department’s oracle database, JD
 
 ## Queries
 
-[Queries used in the project](QUERIES.md)
+[Queries used in the project](Queries.md)
